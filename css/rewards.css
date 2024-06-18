@@ -29,6 +29,9 @@ header {
 }
 
 .starbucks-rewards{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +75,7 @@ header {
 .section1 button{
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: green;
+    background-color: rgb(10, 104, 10);
     color: white;
 }
 
@@ -80,6 +83,59 @@ header {
     color: #000;
 }
 
+.section2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 60vh;
+}
+
+.section2 h2{
+    margin-top: 60px;
+}
+
+.section2 h3{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.sec2-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.section-card{
+    display: flex;
+    flex-direction: row;
+}
+.text-area h3{
+    font-size: 20px;
+}
+.text-area h4{
+    font-size: 16px;
+    font-weight: 100;
+}
+.text-area a{
+    text-decoration: underline;
+    color: green;
+}
+
+.number-area{
+    width: 40%;
+}
+
+.number{
+    width: 50px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bolder;
+    color:green;
+}
 .menu {
     margin-right: 20px;
 }
