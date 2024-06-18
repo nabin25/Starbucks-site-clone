@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/rewards.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="">
+        <div class="menu center">
+            <button id="menu-button">
+                <i class="fa-solid fa-bars" style="height: 40px;"></i>
+            </button>
+        </div>
+    </header>
+
+    <dialog class="side-menu" id="side-menu">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <div class="menu-items-container">
+            <a class="menu-item" href="#">Menu</a>
+            <a class="menu-item" href="#">Rewards</a>
+            <a class="menu-item" href="#">Gift Cards</a>
+        </div>
+        <div class="button-container"></div>
+    </dialog>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const sideMenu = document.getElementById('side-menu');
+        const closeButton = document.getElementById('close-btn');
+
+        menuButton.addEventListener('click', () => {
+            sideMenu.showModal();
+            sideMenu.classList.add('show-menu');
+        });
+
+        closeButton.addEventListener('click', () => {
+            sideMenu.classList.remove('show-menu');
+            setTimeout(() => {
+                sideMenu.close();
+            }, 1000); 
+        });
+    </script>
+</body>
+</html>
