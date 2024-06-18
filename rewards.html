@@ -84,11 +84,11 @@
         <div class="section3">
             <h2>Get your favourites for free</h2>
             <div class="button-container">
-                <button class="drinks active" id="25" onclick="selectDrink(25)">25⭐</button>
-                <button class="drinks" id="100" onclick="selectDrink(100)">100⭐</button>
-                <button class="drinks" id="200" onclick="selectDrink(200)">200⭐</button>
-                <button class="drinks" id="300" onclick="selectDrink(300)">300⭐</button>
-                <button class="drinks" id="400" onclick="selectDrink(400)">400⭐</button>
+                <button class="drinks active" id="25" onclick="selectDrink(25, this)">25⭐</button>
+                <button class="drinks" id="100" onclick="selectDrink(100, this)">100⭐</button>
+                <button class="drinks" id="200" onclick="selectDrink(200, this)">200⭐</button>
+                <button class="drinks" id="300" onclick="selectDrink(300, this)">300⭐</button>
+                <button class="drinks" id="400" onclick="selectDrink(400, this)">400⭐</button>
             </div>
             <div id="drink-cards">
                  <div class="drink-card" id="drink-25">
@@ -173,7 +173,7 @@
            </div>
         </div>`
 
-        function selectDrink(id){
+        function selectDrink(id, button){
             if(id === 25) {
                 document.getElementById('drink-cards').innerHTML = drink25;
             }
@@ -189,6 +189,10 @@
             if(id === 400) {
                 document.getElementById('drink-cards').innerHTML = drink400;
             }
+
+            const allButtons = document.querySelectorAll('.drinks');
+            allButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
         }
         const menuButton = document.getElementById('menu-button');
         const sideMenu = document.getElementById('side-menu');
