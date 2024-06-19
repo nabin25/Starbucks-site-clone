@@ -83,25 +83,25 @@ header {
     color: #000;
 }
 
-.section2, .section4{
+.section2, .section4, .section6{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: white;
     padding-bottom: 30px;
 }
 
-.section2 h2, .section4 h2{
+.section2 h2, .section4 h2, .section6 h2{
     margin-top: 60px;
 }
 
-.section2 h3, .section4 h3{
+.section2 h3, .section4 h3, .section6 h3{
     font-size: 15px;
     font-weight: 100;
     text-align: center;
 }
 
-.sec2-container .sec4-container{
+.sec2-container, .sec4-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,7 +141,35 @@ header {
     color:green;
 }
 
-.section4 img{
+.section6{
+    background-image: url('../images/844262945b2a8b8cfb29.webp');
+    padding: 0;
+}
+
+.section6 h3 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.section6 button{
+    background-color: rgb(10, 93, 10);
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 25px;
+}
+
+.inner-container {
+    background-color: rgb(176, 222, 201);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.section4 img, .section6 img{
     width: 100px;
     margin-right: 20px;
 }
