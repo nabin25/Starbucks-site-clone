@@ -83,7 +83,7 @@ header {
     color: #000;
 }
 
-.section2{
+.section2, .section4{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -91,16 +91,17 @@ header {
     padding-bottom: 30px;
 }
 
-.section2 h2{
+.section2 h2, .section4 h2{
     margin-top: 60px;
 }
 
-.section2 h3{
+.section2 h3, .section4 h3{
     font-size: 15px;
     font-weight: 100;
+    text-align: center;
 }
 
-.sec2-container{
+.sec2-container .sec4-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -111,8 +112,10 @@ header {
     width: 400px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 .text-area h3{
+    text-align: left;
     font-size: 20px;
 }
 .text-area h4{
@@ -138,16 +141,27 @@ header {
     color:green;
 }
 
+.section4 img{
+    width: 100px;
+    margin-right: 20px;
+}
+
 .section3{
     background-color: rgba(238, 241, 226, 0.877);
     display: flex ;
     flex-direction: column;
     align-items: center;
 }
+
+.section4{
+    padding-bottom: 30px;
+}
+
 .section3 h2{
  margin-top: 60px;
  margin-bottom: 30px;
 }
+
 .button-container{
     width: 100%;
 }
@@ -155,6 +169,7 @@ header {
     width: 19%;
     padding: 8px 8px 16px;
     font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .drink-desc h2{
@@ -195,6 +210,58 @@ header {
     padding: 0px;
 }
 
+.section5{
+    background-color: rgb(245, 238, 230);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.section5>h2{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.section5>h3{
+    margin-top: 30px;
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section5-card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+.section5-card h4{
+    font-weight: 100;
+    padding-top: 10px;
+}
+.card-item{
+    display: flex;
+    align-items: top;
+    flex-direction: row;
+    padding-top: 30px;
+}
+.card-item img{
+    width: 100px;
+
+}
+
+.card5-desc {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .menu {
     margin-right: 20px;
 }
@@ -205,8 +272,13 @@ button {
     cursor: pointer;
 }
 
+dialog{
+    margin: 0;
+    padding: 0;
+}
+
 .side-menu {
-    height: 100vh;
+    height: 120vh;
     width: 300px;
     position: fixed;
     margin-bottom: 0px;
@@ -218,7 +290,6 @@ button {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.2);
     border: none;
-    overflow: hidden;
     margin: 0;
 }
 
