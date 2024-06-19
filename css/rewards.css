@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial;
 }
 
 body {
@@ -288,6 +289,92 @@ header {
 .card5-desc {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.section7 {
+    padding: 60px 15px;
+}
+
+.section7 > h2 {
+    margin-bottom: 20px;
+}
+
+.section7 h3 {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 50;
+}
+.section7 a{
+    color: green;
+    text-decoration: underline;
+}
+
+.section7 h1{
+    color: #aaa;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.questions-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.dropdown-mobile{
+    padding-top: 20px;
+}
+
+.dropbtn {
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 20px 30px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.dropdown {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    padding-left: 15px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+.dropdown-content a {
+    color: #aaa;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.show {display:block;}
+
+.social{
+    padding: 40px 10px;
+    gap: 30px;
+}
+
+.social i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.social i:hover {
+    color: #000;
+    filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.9));
 }
 
 .menu {
