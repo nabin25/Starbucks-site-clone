@@ -537,12 +537,11 @@ dialog{
         flex-direction: row;
         padding-left: 60px;
         padding-right: 60px;
-        gap: 30px;
     }
 
     .section-card{
         flex-direction: column;
-
+        width: 25vw;
     }
 
     .number-area{
@@ -748,6 +747,12 @@ dialog{
 
     .navigation-item a{
         font-weight: 700;
+        font-size: 14px;
+    }
+
+    .navigation-item a:hover{
+        color:green;
+        cursor: pointer;
     }
 
     header.desktop{
@@ -780,11 +785,18 @@ dialog{
         margin-left: 40px;
     }
 
+    .signin-navbar:hover{
+        background-color: #d6d6d6;
+    }
+
     .join-navbar{
         color:#fff;
         background-color: #000;
         margin-left:20px;
         margin-right: 30px;
+    }
+    .join-navbar:hover{
+        background-color: #444;
     }
 
     .find a{
