@@ -59,7 +59,6 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 60vh;
     align-items: center;
     background-image: url("../images/section-1-bg.webp");
     background-size: cover;
@@ -104,13 +103,12 @@ header {
 
 .sec2-container, .sec4-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
 }
 
 .section-card{
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
@@ -129,7 +127,7 @@ header {
 }
 
 .number-area{
-    width: 40%;
+    width: 50%;
 }
 
 .number{
@@ -492,6 +490,9 @@ dialog{
 .show-menu {
     left: 0; /* Slide in */
 }
+.desktop {
+    display: none;
+}
 
 @media (max-height: 450px) {
     .side-menu {
@@ -499,5 +500,156 @@ dialog{
     }
     .side-menu a {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section1{
+        height: 60vh;
+    }
+}
+
+/* for desktop view */
+@media (min-width: 768px){
+    .mobile{
+        display: none;
+    }
+    .section1{
+        height: 50vw;
+        margin-top: 0px;
+        background-image: url('../images/section-1-bg-desktop.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: flex-start;
+        justify-content:center;
+        padding-left: 30px;
+    }
+    .section1 h2{
+        font-size: 36px;
+    }
+
+    .section1 h4, .section1 button, .section1 a{
+        font-size: 20px;
+    }
+
+    .sec2-container, .sec4-container{
+        flex-direction: row;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 30px;
+    }
+
+    .section-card{
+        flex-direction: column;
+
+    }
+
+    .number-area{
+        margin-bottom: 25px;
+    }
+    .text-area h3{
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .text-area h3,h4{
+        text-align: center;
+    }
+    .section3 button{
+        width: 8vw;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .drink-card{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 40px;
+    }
+
+    .drink-card .drink-image{
+        width:30%;
+    }
+
+    .drink-card .drink-desc{
+        width: 30%;
+    }
+
+    .drink-desc h2, .drink-desc h3{
+        text-align: left;
+    }
+    .drink-desc h2{
+        margin-left: 10px;
+    }
+
+    .section3 .button-container{
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .section4{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section4>h3{
+        padding-left: 25vw;
+        padding-right: 25vw;
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+
+    .starbucks-rewards{
+        height: 50px;
+    }
+    .starbucks-rewards button{
+        display: none;
+    }
+    
+    .logo-div{
+        height: 15vh;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    
+    .navigation-item{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .nav-active{
+        border-bottom: 5px  solid green;
+    }
+
+    .navigation-item a{
+        font-weight: 700;
+    }
+
+    header.desktop{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+    }
+    .left {
+        display: flex;
+    }
+    .desktop img{
+        display: inline;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 30px;
     }
 }
