@@ -604,6 +604,118 @@ dialog{
         font-size: 18px;
     }
 
+    .section5>h2 {
+        font-size: 28px;
+    }
+    .section5>h3 {
+        font-size: 16px;
+        padding-left: 27vw;
+        padding-right: 27vw;
+        font-weight: 500;
+    }
+
+    .section5 .card-container{
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    .section5-card{
+        flex-direction: row;
+    }
+
+    .section5-card .card-head{
+        width: 20vw;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .card-head>h3{
+        text-align: left;
+        font-size: 24px;
+    }
+    .card-head>h4{
+        text-align: left;
+    }
+
+    .section5-card .card-item{
+        width: 30vw;
+    }
+    .card5-desc>h4{
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .section6{
+        padding: 30px;
+    }
+
+    .section6 img{
+        margin-bottom: 20px;
+        width: 15vw;
+    }
+
+    .section7>h2, .section7>h3{
+        margin-left: 15vw;
+        margin-right: 30vw;
+    }
+
+    .section7 h3{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .section7-container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .questions-container{
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    .question-container{
+        width: 50%
+    }
+
+    .desktop-links{
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+
+    .container h2{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .container a{
+        margin-top: 30px;
+        line-height: 22px;
+        color: #999;
+    }
+    .container a:hover{
+        color: #000;
+        cursor: pointer;
+    }
+
+    .text-area h4{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .inner-container{
+        padding-bottom: 40px;
+    }
 
     .starbucks-rewards{
         height: 50px;
@@ -651,5 +763,35 @@ dialog{
         height: 50px;
         border-radius: 50%;
         margin-left: 30px;
+    }
+    .right{
+        display: flex;
+    }
+
+    .right button{
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .signin-navbar{
+        border: 1px solid black;
+        margin-left: 40px;
+    }
+
+    .join-navbar{
+        color:#fff;
+        background-color: #000;
+        margin-left:20px;
+        margin-right: 30px;
+    }
+
+    .find a{
+        font-weight: bold;
+    }
+    .find:hover{
+        color: green;
+        cursor: pointer;
     }
 }
